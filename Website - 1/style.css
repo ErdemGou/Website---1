@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    height: 100px;
+    border-bottom: 2px solid  rgba(128, 128, 128, 0.3);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+nav .menu ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+nav .menu ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    color: #03fafa;
+    transition: color 0.5s ease ;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+nav .menu .menu-button{
+    color:#03fafa;
+    text-decoration: none;
+    background-color: rgba(0, 255, 255, 0.2);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all 0.25s ease;
+}
+nav .menu .menu-button:hover{
+    color: white;
+    background-color: rgba(0, 255, 255, 0.5);
+}
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+.content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+.content .links a{
+    background-color: white;
+    color: black;
+    border-radius: 56px;
+    padding: 20px;
+    width: 280px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25 ease;
+}
+
+.content .links a:hover{
+    background-color: #03fafa;
+    color: white;
+}
+
+
+
+
+
+
+
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu ul{
+        column-gap: 20px;
+    }
+    .menu .menu-button {
+        display: none;
+    }
+
+    .content{
+        padding-top: 50px;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .content p{
+        font-size:16px
+    }
+    .content .links{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .content .links a{
+        padding: 14px;
+        width: 90%;
+    }
+}
